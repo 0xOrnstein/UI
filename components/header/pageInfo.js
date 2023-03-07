@@ -31,7 +31,7 @@ export const PageInfo = () => {
     const isDark = appTheme === 'dark'
     return (
         <a
-            href="https://docs.Liquify.exchange"
+            href="https://docs.liquify.network"
             target="_blank"
             className={[classes.headerPageInfo].join(' ')}
         >
