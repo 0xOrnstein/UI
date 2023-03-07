@@ -75,7 +75,7 @@ function EnhancedTableHead(props) {
                 sortDirection={orderBy === headCell.id ? order : false}
                 style={{
                   background: '#060B17',
-                  borderBottom: "1px solid #D3F85A",
+                  borderBottom: "1px solid #ff9404",
                   // zIndex: 10,
                 }}
               >
@@ -107,7 +107,7 @@ function EnhancedTableHead(props) {
               <StyledTableCell
                 style={{
                   background: '#060B17',
-                  borderBottom: "1px solid #D3F85A",
+                  borderBottom: "1px solid #ff9404",
                   color: '#8191B9',
                 }}
                 key={headCell.id}
@@ -982,8 +982,8 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
               width: "100%",
               // marginTop: 20,
               padding: "0 30px",
-              // borderTop: '1px solid #D3F85A',
-              borderTop: '1px solid #d3f85a',
+              // borderTop: '1px solid #ff9404',
+              borderTop: '1px solid #ff9404',
               background: '#060B17',
               // height: 70,
               // alignItems: 'center',
@@ -1240,13 +1240,13 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
                                     color="primary"
                                     style={{
                                       padding: "7px 14px",
-                                      border: "1px solid #D3F85A",
-                                      borderColor: '#D3F85A',
+                                      border: "1px solid #ff9404",
+                                      borderColor: '#ff9404',
                                       borderRadius: 100,
                                       fontWeight: 600,
                                       fontSize: 14,
                                       lineHeight: "120%",
-                                      color: '#D3F85A',
+                                      color: '#ff9404',
                                       textTransform: 'uppercase',
                                     }}
                                     onClick={(event) => {
@@ -1541,7 +1541,7 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
               width: '100%',
               padding: '0 30px',
               background: '#060B17',
-              borderTop: '1px solid #d3f85a',
+              borderTop: '1px solid #ff9404',
               // borderRadius: 100,
               color: '#8191B9',
             }}

@@ -148,7 +148,7 @@ export default function ssWhitelist() {
                 <div style={{ marginRight: 9 }}>Listing Fee</div>
 
                 <Hint
-                  hintText={'You must have the indicated amount of veCONE to whitelist an asset.'}
+                  hintText={'You must have the indicated amount of veLiquify to whitelist an asset.'}
                   open={openFeeHint}
                   anchor={feeHintAnchor}
                   handleClick={handleClickFeePopover}
@@ -234,7 +234,7 @@ export default function ssWhitelist() {
                   <>
                     {!token.isWhitelisted &&
                       <Hint
-                        hintText={'Cannot proceed with whitelisting due to insufficient veCONE.'}
+                        hintText={'Cannot proceed with whitelisting due to insufficient veLiquify.'}
                         open={openActionHint}
                         anchor={actionHintAnchor}
                         handleClick={handleClickActionPopover}
@@ -314,7 +314,7 @@ export default function ssWhitelist() {
                   </div>
 
                   <Hint
-                    hintText={'You must have the indicated amount of veCONE to whitelist an asset.'}
+                    hintText={'You must have the indicated amount of veLiquify to whitelist an asset.'}
                     open={openFeeHint}
                     anchor={feeHintAnchor}
                     handleClick={handleClickFeePopover}
@@ -357,7 +357,7 @@ export default function ssWhitelist() {
                     <>
                       {!token.isWhitelisted &&
                         <Hint
-                          hintText={'Cannot proceed with whitelisting due to insufficient veCONE.'}
+                          hintText={'Cannot proceed with whitelisting due to insufficient veLiquify.'}
                           open={openActionHint}
                           anchor={actionHintAnchor}
                           handleClick={handleClickActionPopover}
@@ -390,7 +390,7 @@ export default function ssWhitelist() {
             options: nfts,
             symbol: veToken?.symbol,
             handleChange,
-            placeholder: 'Click to select veCONE',
+            placeholder: 'Click to select veLiquify',
           })}
         </div>
 

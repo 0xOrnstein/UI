@@ -1,6 +1,6 @@
 .listPaper {
   margin-top: 8px;
-  border: 1px solid #D3F85A;
+  border: 1px solid #ff9404;
   border-radius: 12px !important;
   background: #060B17 !important;
 }
@@ -50,7 +50,7 @@
 }
 
 .tokenSelect:hover, .tokenSelectOpen {
-  border: 1px solid #D3F85A;
+  border: 1px solid #ff9404;
 }
 
 @media (max-width: 767px) {
@@ -64,7 +64,7 @@
   padding-right: 30px;
   font-weight: 400;
   font-size: 16px;
-  color: #D3F85A;
+  color: #ff9404;
 }
 
 @media (max-width: 767px) {

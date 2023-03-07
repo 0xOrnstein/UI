@@ -521,11 +521,11 @@ input[type=number].mediumInputAmount {
 .slippageIcon {
   width: 20px;
   height: 20px;
-  fill: #D3F85A;
+  fill: #ff9404;
 }
 
 .slippageIcon--active {
-  /*fill: #D3F85A;*/
+  /*fill: #ff9404;*/
 }
 
 .popoverPaper {
@@ -1235,7 +1235,7 @@ input[type=number].mediumInputAmount {
   width: 375px;
   background-color: #181d2d;
   border-radius: 12px;
-  color: #D3F85A;
+  color: #ff9404;
 }
 
 
@@ -1372,7 +1372,7 @@ input[type=number].mediumInputAmount {
   border-radius: 0 !important;
 }
 .tokenSelect:hover, .tokenSelectOpen {
-  border: 1px solid #D3F85A;
+  border: 1px solid #ff9404;
   border-radius: 12px !important;
 }
 
@@ -1393,7 +1393,7 @@ input[type=number].mediumInputAmount {
 
 .tokenSelectInput--dark {
   padding: 6px 12px 6px 6px !important;
-  color: #D3F85A !important;
+  color: #ff9404 !important;
 }
 
 .tokenSelectInput > .menuOption > .menuOptionSec,
@@ -1414,7 +1414,7 @@ input[type=number].mediumInputAmount {
 
 .listPaper {
   margin-top: 8px;
-  border: 1px solid #D3F85A;
+  border: 1px solid #ff9404;
   border-radius: 12px !important;
   background: #060B17 !important;
 }
@@ -1686,7 +1686,7 @@ input[type=number].mediumInputAmount {
 }
 
 .buttonOverride--dark {
-  background: #D3F85A !important;
+  background: #ff9404 !important;
   border-radius: 12px !important;
   color: #060B17 !important;
 }
@@ -1696,7 +1696,7 @@ input[type=number].mediumInputAmount {
 }
 
 .buttonOverride--dark:not(:disabled):active {
-  background: #D3F85A !important;
+  background: #ff9404 !important;
   border-radius: 12px !important;
   color: #060B17 !important;
 }

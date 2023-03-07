@@ -338,7 +338,7 @@ function EnhancedTableHead(props) {
                   sortDirection={orderBy === headCell.id ? order : false}
                   style={{
                     background: '#060B17',
-                    borderBottom: `1px solid #d3f85a`,
+                    borderBottom: `1px solid #ff9404`,
                     // zIndex: 10,
                   }}>
                   <TableSortLabel
@@ -367,7 +367,7 @@ function EnhancedTableHead(props) {
                 : <StyledTableCell
                   style={{
                     background: '#060B17',
-                    borderBottom: `1px solid #d3f85a`,
+                    borderBottom: `1px solid #ff9404`,
                     color: '#8191B9',
                   }}
                   key={headCell.id}
@@ -422,7 +422,7 @@ const useStyles = makeStyles((theme) => {
     },
     voteTooltip: {
       background: '#060B17',
-      border: '1px solid #D3F85A',
+      border: '1px solid #ff9404',
       borderRadius: 12,
       flexDirection: 'column',
       width: 448,
@@ -739,7 +739,7 @@ const useStyles = makeStyles((theme) => {
       borderRadius: 12,
       width: 353,
       background: '#060B17',
-      border: '1px solid #D3F85A',
+      border: '1px solid #ff9404',
     },
     dialogBody: {
       background: 'rgba(0, 0, 0, 0.1) !important',
@@ -802,7 +802,7 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
              viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M16.9201 0.949951L10.4001 7.46995C9.63008 8.23995 8.37008 8.23995 7.60008 7.46995L1.08008 0.949951"
-            stroke="#D3F85A" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"
+            stroke="#ff9404" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"
             strokeLinejoin="round"/>
         </svg>
     );
@@ -987,7 +987,7 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
         <div
           style={{
             marginTop: 0, /*((windowWidth <= 1360 && showSearch) || windowWidth <= 1210) ? 45 : 0,*/
-            border: '1px solid #D3F85A',
+            border: '1px solid #ff9404',
             borderRadius: 12,
             overflow: 'hidden',
           }}
@@ -1327,7 +1327,7 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
               width: '100%',
               padding: '0 30px',
               background: '#060B17',
-              borderTop: '1px solid #d3f85a',
+              borderTop: '1px solid #ff9404',
               color: '#8191B9',
               // fontSize: 14,
               // fontWeight: 500,
@@ -1491,7 +1491,7 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
                               onClick={() => {toggleSelect(row)}}
                               className={[cssTokenSelect.tokenSelect, cssTokenSelect[`tokenSelect--${appTheme}`], openSelectToken ? cssTokenSelect.tokenSelectOpen : '',].join(' ')}
                               style={{
-                                border: '1px solid #D3F85A', // always visible
+                                border: '1px solid #ff9404', // always visible
                               }}
                               fullWidth
                               MenuProps={{
@@ -1507,7 +1507,7 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
                                   if (selected === null) {
                                     return (
                                         <div className={cssTokenSelect.placeholder}>
-                                          Select veCONE NFT
+                                          Select veLiquify NFT
                                         </div>
                                     );
                                   }
@@ -1521,16 +1521,16 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
                             {(!vestNFTs || !vestNFTs.length) &&
                                 <div className={cssTokenSelect.noNFT}>
                                   <div className={cssTokenSelect.noNFTtext}>
-                                    You receive NFT by creating a Lock of your CONE for some time, the more CONE you lock and for
+                                    You receive NFT by creating a Lock of your Liquify for some time, the more Liquify you lock and for
                                     the longest time, the more Voting Power your NFT will have.
                                   </div>
                                   <div className={cssTokenSelect.noNFTlinks}>
                         <span className={cssTokenSelect.noNFTlinkButton} onClick={() => {
                           router.push("/swap")
-                        }}>BUY CONE</span>
+                        }}>BUY Liquify</span>
                                     <span className={cssTokenSelect.noNFTlinkButton} onClick={() => {
                                       router.push("/vest")
-                                    }}>LOCK CONE FOR NFT</span>
+                                    }}>LOCK Liquify FOR NFT</span>
                                   </div>
                                 </div>
                             }
@@ -1545,7 +1545,7 @@ export default function EnhancedTable({gauges, setParentSliderValues, defaultVot
                                           style={{
                                             fontWeight: 500,
                                             fontSize: 16,
-                                            color: '#D3F85A',
+                                            color: '#ff9404',
                                           }}>
                                         #{option.id}
                                       </Typography>

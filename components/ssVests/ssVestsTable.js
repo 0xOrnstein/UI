@@ -198,7 +198,7 @@ function EnhancedTableHead(props) {
                           style={{
                             padding: '15px 24px 16px',
                             background: '#060B17',
-                            borderBottom: `1px solid #d3f85a`,
+                            borderBottom: `1px solid #ff9404`,
                             zIndex: 10,
                           }}>
                         <TableSortLabel
@@ -221,7 +221,7 @@ function EnhancedTableHead(props) {
                           style={{
                             padding: '15px 24px 16px',
                             background: '#060B17',
-                            borderBottom: `1px solid #d3f85a`,
+                            borderBottom: `1px solid #ff9404`,
                             color: '#8191B9',
                           }}
                           key={headCell.id}
@@ -522,7 +522,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tableContainer: {
     // border: 'none',
-    border: '1px solid #D3F85A',
+    border: '1px solid #ff9404',
     borderRadius: 12,
     width: '100%',
     display: 'flex',
@@ -553,7 +553,7 @@ const useStyles = makeStyles((theme) => ({
 
     borderRadius: 12,
 
-    background: '#D3F85A',
+    background: '#ff9404',
     color: '#060B17',
 
     cursor: 'pointer',
@@ -601,7 +601,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     '& > span': {
-      color: '#D3F85A',
+      color: '#ff9404',
     }
   },
   mergeButton: {
@@ -733,7 +733,7 @@ const EnhancedTableToolbar = (props) => {
 
 
           <div className={classes.toolbarInfo}>
-            Lock CONE to earn voting power, rewards and boost your LP rewards.
+            Lock LIQUIFY to earn voting power, rewards and boost your LP rewards.
             <span className={classes.toolbarInfoLink}>
             <img src="/images/ui/explorer.svg" />
           </span>
@@ -743,7 +743,7 @@ const EnhancedTableToolbar = (props) => {
         <div className={classes.sidebar}>
 
           <div className={classes.aprButton}>
-            veCONE Rewards APR: <span>{parseInt(props.veToken?.veDistApr)}%</span>
+            veLIQUIFY Rewards APR: <span>{parseInt(props.veToken?.veDistApr)}%</span>
           </div>
 
           <div className={classes.addButton} onClick={onCreate}>
@@ -1041,12 +1041,12 @@ export default function EnhancedTable({vestNFTs, govToken, veToken}) {
                                       color="primary"
                                       style={{
                                         padding: '7px 14px',
-                                        border: `1px solid #D3F85A`,
+                                        border: `1px solid #ff9404`,
                                         borderRadius: 12,
                                         fontWeight: 600,
                                         fontSize: 14,
                                         lineHeight: '120%',
-                                        color: '#D3F85A',
+                                        color: '#ff9404',
                                       }}
                                       onClick={() => {
                                         onView(row);
@@ -1076,7 +1076,7 @@ export default function EnhancedTable({vestNFTs, govToken, veToken}) {
                 // marginTop: 20,
                 padding: '0 30px',
                 background: '#060B17',
-                borderTop: '1px solid #d3f85a',
+                borderTop: '1px solid #ff9404',
                 color: '#8191B9',
               }}
               rowsPerPageOptions={[5, 10, 25]}
@@ -1257,13 +1257,13 @@ export default function EnhancedTable({vestNFTs, govToken, veToken}) {
                                         color="primary"
                                         style={{
                                           padding: '11px 16px',
-                                          border: '1px solid #D3F85A',
+                                          border: '1px solid #ff9404',
                                           borderRadius: 12,
                                           fontWeight: 600,
                                           fontSize: 14,
                                           lineHeight: '16px',
                                           letterSpacing: '0em !important',
-                                          color: '#D3F85A',
+                                          color: '#ff9404',
                                         }}
                                         onClick={(event) => {
                                           event.stopPropagation();
@@ -1431,7 +1431,7 @@ export default function EnhancedTable({vestNFTs, govToken, veToken}) {
                         width: '100%',
                         padding: '0 30px',
                         background: '#060B17',
-                        borderTop: '1px solid #d3f85a',
+                        borderTop: '1px solid #ff9404',
                         // borderColor: appTheme === 'dark' ? '#5F7285' : '#86B9D6',
                         // borderRadius: 100,
                         color: '#8191B9',

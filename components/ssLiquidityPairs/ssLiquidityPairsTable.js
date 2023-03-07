@@ -189,7 +189,7 @@ const headCells = [
     label: <div style={{display: 'flex',}}>
       <span>TVL / APR</span>
       <Tooltip
-          title='APR is based on current prices of tokens, token boosted APR, your veCONE amount, the % of TVL using veCONE and gauge TVL.'
+          title='APR is based on current prices of tokens, token boosted APR, your veLiquify amount, the % of TVL using veLiquify and gauge TVL.'
           componentsProps={{
             tooltip: {
               style: {
@@ -334,7 +334,7 @@ function EnhancedTableHead(props) {
                     sortDirection={orderBy === headCell.id ? order : false}
                     style={{
                       background: '#060B17',
-                      borderBottom: `1px solid #d3f85a`,
+                      borderBottom: `1px solid #ff9404`,
                       // zIndex: 10,
                     }}>
                     <TableSortLabel
@@ -363,7 +363,7 @@ function EnhancedTableHead(props) {
                   : <StyledTableCell
                     style={{
                       background: '#060B17',
-                      borderBottom: `1px solid #d3f85a`,
+                      borderBottom: `1px solid #ff9404`,
                       color: '#8191B9',
                     }}
                     key={headCell.id}
@@ -452,7 +452,7 @@ const useStyles = makeStyles({
   },
   tableContWrapper: {
     marginTop: 20,
-    border: '1px solid #D3F85A',
+    border: '1px solid #ff9404',
     borderRadius: 12,
     overflow: 'hidden',
     ["@media (min-width:806px)"]: {
@@ -954,7 +954,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     textTransform: 'uppercase',
     lineHeight: '48px',
-    background: '#D3F85A',
+    background: '#ff9404',
     color: '#060B17',
     transition: 'all ease 300ms',
     fontSize: 20,
@@ -1682,7 +1682,7 @@ export default function EnhancedTable({pairs, isLoading}) {
                             style={{
                               background: '#171D2D',
                               borderBottom: `1px solid ${appTheme === 'dark' ? '#2D3741' : '#CFE5F2'}`,
-                              borderRight: windowWidth < 1333 ? '1px solid #D3F85A' : 'none',
+                              borderRight: windowWidth < 1333 ? '1px solid #ff9404' : 'none',
                             }}
                             className={classes.cell}>
                             <div className={classes.inline}>
@@ -2393,12 +2393,12 @@ export default function EnhancedTable({pairs, isLoading}) {
                               color="primary"
                               style={{
                                 padding: '7px 14px',
-                                border: `1px solid #D3F85A`,
+                                border: `1px solid #ff9404`,
                                 borderRadius: 12,
                                 fontWeight: 600,
                                 fontSize: 14,
                                 lineHeight: '120%',
-                                color: '#D3F85A',
+                                color: '#ff9404',
                               }}
                               onClick={() => {
                                 onView(row);
@@ -2420,7 +2420,7 @@ export default function EnhancedTable({pairs, isLoading}) {
                 // marginTop: 20,
                 padding: '0 30px',
                 background: '#060B17',
-                borderTop: '1px solid #d3f85a',
+                borderTop: '1px solid #ff9404',
                 // height: 70,
                 // display: 'flex',
                 // justifyContent: 'flex-end',
@@ -2597,12 +2597,12 @@ export default function EnhancedTable({pairs, isLoading}) {
                               color="primary"
                               style={{
                                 padding: '10px 18px',
-                                border: `1px solid #D3F85A`,
+                                border: `1px solid #ff9404`,
                                 borderRadius: 12,
                                 fontWeight: 600,
                                 fontSize: 14,
                                 lineHeight: '16px',
-                                color: '#D3F85A',
+                                color: '#ff9404',
                               }}
                               onClick={(event) => {
                                 event.stopPropagation();
@@ -2632,7 +2632,7 @@ export default function EnhancedTable({pairs, isLoading}) {
                             noWrap>
                             TVL / APR
                             <Tooltip
-                                title='APR is based on current prices of tokens, token boosted APR, your veCONE amount, the % of TVL using veCONE and gauge TVL.'
+                                title='APR is based on current prices of tokens, token boosted APR, your veLiquify amount, the % of TVL using veLiquify and gauge TVL.'
                                 componentsProps={{
                                   tooltip: {
                                     style: {
@@ -2977,7 +2977,7 @@ export default function EnhancedTable({pairs, isLoading}) {
                     // marginTop: 20,
                     padding: '0 30px',
                     background: '#060B17',
-                    borderTop: '1px solid #d3f85a',
+                    borderTop: '1px solid #ff9404',
                     // borderRadius: 12,
                     color: '#8191B9',
                   }}

@@ -177,7 +177,7 @@
   font-weight: 600 !important;
   font-size: 32px !important;
   line-height: 48px;
-  background: #D3F85A;
+  background: #ff9404;
   border-radius: 12px;
   color: #060B17;
   transition: all ease 300ms;
@@ -189,7 +189,7 @@
   }
   .tableWrapper > div {
     background: #060B17;
-    border: 1px solid #D3F85A;
+    border: 1px solid #ff9404;
     border-radius: 12px;
   }
   .toolbarContainer {

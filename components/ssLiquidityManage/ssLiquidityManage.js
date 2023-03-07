@@ -1797,7 +1797,7 @@ export default function ssLiquidityManage({initActiveTab = 'deposit',}) {
           ].join(" ")}
         >
           <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.9201 0.950012L10.4001 7.47001C9.63008 8.24001 8.37008 8.24001 7.60008 7.47001L1.08008 0.950012" stroke="#D3F85A" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M16.9201 0.950012L10.4001 7.47001C9.63008 8.24001 8.37008 8.24001 7.60008 7.47001L1.08008 0.950012" stroke="#ff9404" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
       // </ClickAwayListener>
@@ -1829,7 +1829,7 @@ export default function ssLiquidityManage({initActiveTab = 'deposit',}) {
                           paddingRight: 10,
                           fontWeight: 400,
                           fontSize: 16,
-                          color: '#D3F85A',
+                          color: '#ff9404',
                         }}
                       >
                         Select {veToken?.symbol} NFT
@@ -1861,11 +1861,11 @@ export default function ssLiquidityManage({initActiveTab = 'deposit',}) {
         {!vestNFTs.length &&
             <div className={classes.noNFT}>
               <div className={classes.noNFTtext}>
-                You receive NFT by creating a Lock of your CONE for some time, the more CONE you lock and for the longest time, the more Voting Power your NFT will have.
+                You receive NFT by creating a Lock of your Liquify for some time, the more Liquify you lock and for the longest time, the more Voting Power your NFT will have.
               </div>
               <div className={classes.noNFTlinks}>
-                <span className={classes.noNFTlinkButton} onClick={() => {router.push("/swap")}}>BUY CONE</span>
-                <span className={classes.noNFTlinkButton} onClick={() => {router.push("/vest")}}>LOCK CONE FOR NFT</span>
+                <span className={classes.noNFTlinkButton} onClick={() => {router.push("/swap")}}>BUY Liquify</span>
+                <span className={classes.noNFTlinkButton} onClick={() => {router.push("/vest")}}>LOCK Liquify FOR NFT</span>
               </div>
             </div>
         }
@@ -1887,7 +1887,7 @@ export default function ssLiquidityManage({initActiveTab = 'deposit',}) {
                       // fontWeight: 500,
                       // fontSize: 12,
                       // marginRight: 30,
-                      color: "#D3F85A",
+                      color: "#ff9404",
                     }}
                   >
                     <span className={classes.nftword}>NFT </span>#{option.id}
@@ -2451,7 +2451,7 @@ export default function ssLiquidityManage({initActiveTab = 'deposit',}) {
                             !
                           </div>
                           <div>
-                            Select veCONE NFT for your LP Stake to get an APR boost in proportion to Voting Power.
+                            Select veLiquify NFT for your LP Stake to get an APR boost in proportion to Voting Power.
                           </div>
                         </div>
                     }

@@ -363,7 +363,7 @@ export default function ssVotes() {
               options: vestNFTs,
               symbol: veToken?.symbol,
               handleChange,
-              placeholder: "Select veCONE NFT",
+              placeholder: "Select veLiquify NFT",
             })}
           </div>
 
