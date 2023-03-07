@@ -1345,7 +1345,7 @@ function Setup() {
                 className={[classes.quoteLoader, classes.quoteLoaderError].join(" ")}
             >
               <div
-                  className={[classes.quoteLoaderIcon, classes.quoteLoaderIconError].join(
+                  className={[classes.quoteLoaderIcon, classes.quoteLoaderILiquifyrror].join(
                       " "
                   )}
               >

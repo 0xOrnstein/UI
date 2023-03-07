@@ -5,7 +5,7 @@ import { useAppThemeContext } from '../../ui/AppThemeProvider';
 export default function ffWarning({close, title, subTitle, icon, description, btnLabel1, btnLabel2, action2}) {
   const navigateToMedium = () => {
     // window.open("https://medium.com/@DystopiaSwap", "_blank");
-    window.open("https://docs.cone.exchange/cone-swap/", "_blank");
+    window.open("https://docs.Liquify.exchange/Liquify-swap/", "_blank");
   };
 
   const {appTheme} = useAppThemeContext();
@@ -30,7 +30,7 @@ export default function ffWarning({close, title, subTitle, icon, description, bt
             <img src="/images/icon-warning.svg" className={classes.warningIcon} />
 
             <Typography className={classes.title1}>
-              {title ? title : 'Cone Disclaimer:'}
+              {title ? title : 'Liquify Disclaimer:'}
             </Typography>
           </div>
 
@@ -45,15 +45,15 @@ export default function ffWarning({close, title, subTitle, icon, description, bt
               ? description
               : <>
                 <p className={classes.paragraph1}>
-                  Use of the Cone.exchange website, services, dapp, or application is subject to the following Terms & Conditions and hereby confirm that by proceeding and interacting with the protocoL I am aware of these and accept them in full:
+                  Use of the Liquify.exchange website, services, dapp, or application is subject to the following Terms & Conditions and hereby confirm that by proceeding and interacting with the protocoL I am aware of these and accept them in full:
                 </p>
-                <p>Cone.exchange is a smart contract protocol in alpha stage of launch, and even though multiple
+                <p>Liquify.exchange is a smart contract protocol in alpha stage of launch, and even though multiple
                 security audits have been completed on the smart contracts, I understand the risks associated with using the
-                Cone protocol and associated functions.</p>
-                <p>Any interactions that I have with the associated Cone protocol apps, smart contracts or any related
-                functions MAY place my funds at risk, and hereby release the Cone protocol and its contributors,
+                Liquify protocol and associated functions.</p>
+                <p>Any interactions that I have with the associated Liquify protocol apps, smart contracts or any related
+                functions MAY place my funds at risk, and hereby release the Liquify protocol and its contributors,
                 team members, and service providers from any and all liability with my use of the above-mentioned functions.</p>
-                <p>I am lawfully permitted to access this site and use the cone.exchange application functions, and I
+                <p>I am lawfully permitted to access this site and use the Liquify.exchange application functions, and I
                 am not in contravention of any laws governing my jurisdiction of residence or citizenship.</p>
               </>
             }

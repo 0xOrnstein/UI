@@ -94,14 +94,14 @@
 
   border-radius: 12px;
 
-  background: #d3f85a;
+  background: #ff9404;
 
   padding: 0 !important;
 
   text-transform: uppercase;
 
   border: none !important;
-  background-color: #d3f85a !important;
+  background-color: #ff9404 !important;
 
   cursor: pointer;
 }
@@ -132,7 +132,7 @@
   font-family: "Poppins";
   line-height: 52px;
 
-  color: #779bf4;
+  color: #ff9404;
 }
 
 @media (max-width: 600px) {
@@ -161,10 +161,6 @@
 
   padding-top: 5px;
 
-  border: 1px solid #779bf4;
-  border-radius: 30px;
-
-  background: rgba(119, 155, 244, 0.15);
 }
 
 .layoutPromoSocialsLink:last-child {
@@ -216,11 +212,11 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  border: 1px solid #779BF4;
+  border: 1px solid #ff9404;
   border-radius: 12px;
 
   background: rgba(119, 155, 244, 0.15);
-  color: #779BF4;
+  color: #ff9404;
 
   cursor: pointer;
 }

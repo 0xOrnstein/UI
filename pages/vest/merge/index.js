@@ -24,7 +24,7 @@ const renderAssetOption = (item, callbackClick) => {
     <div className={classes.selectItem} key={item.id} onClick={() => callbackClick(item)}>
       <div className={classes.selectItemCol}>
         <div className={classes.selectItemTitle}>NFT #{item.id}</div>
-        <div className={classes.selectItemValue}>{Number(item.lockAmount).toFixed(2)} CONE</div>
+        <div className={classes.selectItemValue}>{Number(item.lockAmount).toFixed(2)} Liquify</div>
       </div>
       <div className={classes.selectItemCol}>
         <div className={classes.selectItemTitle}>{moment.unix(item.lockEnds).format("YYYY-MM-DD")}</div>
@@ -164,7 +164,7 @@ const merge = () => {
               <div className={classes.tokenSelectInfoCol}>
                 <div className={classes.tokenSelectInfoTitle}>NFT #{firstSelectedNft.id}</div>
                 <div className={classes.tokenSelectInfoValue}>
-                  {Number(firstSelectedNft.lockAmount)} CONE
+                  {Number(firstSelectedNft.lockAmount)} Liquify
                 </div>
               </div>
               <div className={classes.tokenSelectInfoCol}>
@@ -241,7 +241,7 @@ const merge = () => {
               <div className={classes.tokenSelectInfoCol}>
                 <div className={classes.tokenSelectInfoTitle}>NFT #{secondSelectedNft.id}</div>
                 <div className={classes.tokenSelectInfoValue}>
-                  {Number(secondSelectedNft.lockAmount)} CONE
+                  {Number(secondSelectedNft.lockAmount)} Liquify
                 </div>
               </div>
               <div className={classes.tokenSelectInfoCol}>
@@ -354,7 +354,7 @@ const merge = () => {
                         <div className={classes.selectItemCol}>
                           <div className={classes.selectItemTitle}>NFT #{secondSelectedNft.id}</div>
                           <div className={classes.selectItemValue}>
-                            {(Number(firstSelectedNft.lockAmount) + Number(secondSelectedNft.lockAmount)).toFixed(2)} CONE
+                            {(Number(firstSelectedNft.lockAmount) + Number(secondSelectedNft.lockAmount)).toFixed(2)} Liquify
                           </div>
                         </div>
                         <div className={classes.selectItemCol}>
@@ -372,7 +372,7 @@ const merge = () => {
                         <div className={classes.selectItemCol}>
                           <div className={classes.selectItemTitle}>NFT #{secondSelectedNft.id}</div>
                           <div className={classes.selectItemValue}>
-                            {(Number(firstSelectedNft.lockAmount) + Number(secondSelectedNft.lockAmount)).toFixed(2)} CONE
+                            {(Number(firstSelectedNft.lockAmount) + Number(secondSelectedNft.lockAmount)).toFixed(2)} Liquify
                           </div>
                         </div>
                         <div className={classes.selectItemCol}>

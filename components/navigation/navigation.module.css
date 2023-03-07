@@ -561,11 +561,11 @@ a.linkz {
   border: 1px solid var(--main-secondary-light) !important;
   z-index: 9; */
 
-  color: #D3F85A !important;
+  color: #ff9404 !important;
 }
 
 .nav-button:active {
-  color: #D3F85A !important;
+  color: #ff9404 !important;
   /* background: #9BC9E4 !important;
   color: #0B5E8E !important;
   border: 1px solid var(--main-secondary-light) !important;
@@ -612,7 +612,7 @@ a.linkz {
 
 .nav-button--active {
   /* position: relative; */
-  color: #D3F85A !important;
+  color: #ff9404 !important;
 }
 
 .nav-button--active::after {

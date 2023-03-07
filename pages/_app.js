@@ -36,7 +36,7 @@ export default function MyApp({ Component, pageProps }) {
   const changeTheme = (dark) => {
     setAppTheme(dark ? "dark" : "light");
 
-    localStorage.setItem("cone.finance-dark-mode", dark ? "dark" : "light");
+    localStorage.setItem("Liquify.finance-dark-mode", dark ? "dark" : "light");
   };
 
   const accountConfigureReturned = () => {
@@ -49,7 +49,7 @@ export default function MyApp({ Component, pageProps }) {
 
   useEffect(function () {
     const localStorageDarkMode = window.localStorage.getItem(
-      "cone.finance-dark-mode"
+      "Liquify.finance-dark-mode"
     );
     changeTheme(localStorageDarkMode ? localStorageDarkMode === "dark" : true);
   }, []);
@@ -93,7 +93,7 @@ export default function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <React.Fragment>
         <Head>
-          <title>Cone</title>
+          <title>Liquify</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <AppThemeProvider value={{ appTheme, setAppTheme }}>
@@ -110,7 +110,7 @@ export default function MyApp({ Component, pageProps }) {
                 width: '100%',
                 height: '100%',
                 position: 'absolute',
-                backgroundImage: 'url(/images/background/background.jpg)',
+                backgroundImage: 'url(/images/background/background.png)',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
               }}>
@@ -118,7 +118,7 @@ export default function MyApp({ Component, pageProps }) {
                     src={"/images/ui/logo.png"}
                     style={{
                       position: "absolute",
-                      width: "242px",
+                      width: "100%",
                       top: "50%",
                       left: "50%",
                       transform: "translate(-50%, -50%)",

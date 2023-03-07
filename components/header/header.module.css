@@ -1,5 +1,5 @@
 .headerPageInfo {
-  border: 2px solid #15B525;
+  border: 2px solid #ff9404;
   padding: 0px 8px;
   border-radius: 15px;
   display: flex;
@@ -275,10 +275,10 @@
   line-height: 150% !important;
   letter-spacing: 0 !important;
 
-  border: 1px solid #D3F85A !important;
+  border: 1px solid #ff9404 !important;
   border-radius: 10px !important;
 
-  color: #D3F85A !important;
+  color: #ff9404 !important;
 }
 
 .connectButton:hover {

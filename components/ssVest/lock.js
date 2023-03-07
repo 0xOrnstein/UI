@@ -403,7 +403,7 @@ export default function ssLock({govToken, veToken}) {
                 ? 'Enter Lock Amount'
                 : !isDateCorrect(selectedDate)
                   ? 'Wrong expiration date'
-                  : `Lock Tokens & Get veCONE`
+                  : `Lock Tokens & Get veLiquify`
             }
           </Typography>
 

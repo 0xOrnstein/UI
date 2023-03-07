@@ -23,7 +23,7 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
   const [ boostedAPRAmount, setBoostedAPRAmount ] = useState(0);
   const [ usedAPRPercentage, setUsedAPRPercentage ] = useState(0);
   const [ aprLimits, setAprLimits ] = useState({ min: 0, max: 100 }); // Percentage only
-  const [ veConeLimits, setVeConeLimits ] = useState({ min: 0, max: 1000 });
+  const [ veLiquifyLimits, setVeLiquifyLimits ] = useState({ min: 0, max: 1000 });
 
   const [lpAmount, setLpAmount] = useState(BigNumber(0))
 
@@ -37,7 +37,7 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
       // const userGaugeBalance = +pair.gauge.balance + parseFloat((amount ? amount * pair.gauge.balance / 100 : 0).toString());
       const userGaugeBalance = lpAmount;
 
-      // lock value it is veCONE power, if no NFT equals zero
+      // lock value it is veLiquify power, if no NFT equals zero
       const lockValue = BigNumber(nft?.lockValue ?? 0);
       const veRatio = lockValue.div(ve.totalPower);
 
@@ -140,12 +140,12 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
       setCurrentAPRPercentage(sliderConfig.personalAPR); // Set default value of APR% (show in Calculator and Default place of thumb of slider)
       setCurrentAPRAmount(sliderConfig.earnPerDay); // APR amount per day (show in Calculator)
       setBoostedAPRPercentage(sliderConfig.personalAPR); // Default value for boosted APR%.
-      setUsedAPRPercentage(sliderConfig.personalAPR); // Value of user's used veCone % (Slider will start from this position)
+      setUsedAPRPercentage(sliderConfig.personalAPR); // Value of user's used veLiquify % (Slider will start from this position)
       // console.log('setUsedAPRPercentage', sliderConfig.personalAPR)
 
       setAprLimits({min: sliderConfig.minApr, max: sliderConfig.maxApr}); // Limits for slider, min & max APR%
-      setVeConeLimits({min: 0, max: sliderConfig.maxPower}); // Limits for slider, veCone min & max. It should be linear dependency with APR%
-      // console.log('setVeConeLimits', {min: 0, max: sliderConfig.maxPower})
+      setVeLiquifyLimits({min: 0, max: sliderConfig.maxPower}); // Limits for slider, veLiquify min & max. It should be linear dependency with APR%
+      // console.log('setVeLiquifyLimits', {min: 0, max: sliderConfig.maxPower})
     }
   }, [ pair, lpAmount, nft ]);
 
@@ -185,7 +185,7 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
 
   const noteRender = <div className={classes.sliderNote}>
     <div className={classes.sliderNoteWarnSymbol}>!</div>
-    <div>Move slider above to calculate the veCONE Power for Max Boosted Rewards.</div>
+    <div>Move slider above to calculate the veLiquify Power for Max Boosted Rewards.</div>
   </div>;
 
   const onChange = ({ currentPct,  currentAmount}) => {
@@ -224,7 +224,7 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
               Min-Max APR
             </div>
             <div className={classes.sliderLabelsItem}>
-              veCONE
+              veLiquify
             </div>
           </div>
           <div className={classes.slider}>
@@ -234,8 +234,8 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
                 pointUsed={usedAPRPercentage}
                 pointMinPct={aprLimits.min}
                 pointMaxPct={aprLimits.max}
-                pointMinValue={veConeLimits.min}
-                pointMaxValue={veConeLimits.max}
+                pointMinValue={veLiquifyLimits.min}
+                pointMaxValue={veLiquifyLimits.max}
                 step={1}
                 disabled={false}
                 onChange={onChange}
@@ -246,8 +246,8 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
                 pointUsed={usedAPRPercentage}
                 pointMinPct={aprLimits.min}
                 pointMaxPct={aprLimits.max}
-                pointMinValue={veConeLimits.min}
-                pointMaxValue={veConeLimits.max}
+                pointMinValue={veLiquifyLimits.min}
+                pointMaxValue={veLiquifyLimits.max}
                 step={1}
                 disabled={false}
                 onChange={onChange}
@@ -256,7 +256,7 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
           </div>
           <div className={[ classes.sliderLabels, classes[ 'sliderLabels--mobile' ] ].join(' ')}>
             <div className={classes.sliderLabelsItem}>
-              veCONE
+              veLiquify
             </div>
           </div>
         </div>
@@ -307,7 +307,7 @@ export default function ssBoostCalculator({pair, nft, ve, isMobileView = false, 
           <div className={classes.createActionNote}>You need to have NFT with {fixed(boostedNFTAmount)} {VE_TOKEN_NAME} Power. Create or select/merge
             NFTs.
           </div>
-          <div className={classes.createActionButton} onClick={createAction}>Create veCone</div>
+          <div className={classes.createActionButton} onClick={createAction}>Create veLiquify</div>
         </div>}
       </div>
   );

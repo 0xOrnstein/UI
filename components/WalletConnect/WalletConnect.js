@@ -26,7 +26,7 @@ async function connect() {
       walletlink: {
         package: CoinbaseWalletSDK,
         options: {
-          appName: 'Cone app',
+          appName: 'Liquify app',
           infuraId: `${process.env.NEXT_PUBLIC_INFURA_KEY}`,
           rpc: {
             56: `https://bsc-dataseed.binance.org/`,

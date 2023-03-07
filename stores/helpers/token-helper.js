@@ -2,7 +2,7 @@ import DEFAULT_TOKEN_LIST from './../constants/tokenlists/pancakeswap-extended.j
 import {
   BASE_ASSETS_WHITELIST,
   BLACK_LIST_TOKENS,
-  CONE_ADDRESS,
+  Liquify_ADDRESS,
   CONTRACTS,
   QUERIES,
   RENAME_ASSETS,
@@ -82,7 +82,7 @@ async function getTokenList() {
     // some test token list
   } else {
     /*await axios.get(
-     `https://raw.githubusercontent.com/cone-exchange/token-list/main/lists/pancakeswap-extended.json`
+     `https://raw.githubusercontent.com/Liquify-exchange/token-list/main/lists/pancakeswap-extended.json`
    )*/
     return {data: DEFAULT_TOKEN_LIST,}
   }
@@ -116,8 +116,8 @@ export const getBaseAssets = async () => {
         baseAsset.logoURI = tokenInfo.logoURI;
       }
 
-      if (baseAsset.address.toLowerCase() === CONE_ADDRESS.toLowerCase()) {
-        baseAsset.logoURI = 'https://icons.llama.fi/cone.png'
+      if (baseAsset.address.toLowerCase() === Liquify_ADDRESS.toLowerCase()) {
+        baseAsset.logoURI = 'https://icons.llama.fi/Liquify.png'
       }
 
       if (RENAME_ASSETS[baseAsset.name]) {

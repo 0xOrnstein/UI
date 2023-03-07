@@ -47,9 +47,9 @@ export const WrongNetwork = (props) => {
           </Typography>
 
           <div className={classes.buttonsContainer}>
-            <a className={classes.primaryButton} href="https://chainlist.org/chain/56" target="_blank" rel="noreferrer">
+            <a className={classes.primaryButton} href="https://chainlist.org/chain/1116" target="_blank" rel="noreferrer">
               <Typography className={classes.buttonTextPrimary}>
-                ADD BSC MAINNET
+                ADD COREDAO MAINNET
               </Typography>
               <img src="/images/ui/explorer.svg" width="20px" />
             </a>
@@ -57,7 +57,7 @@ export const WrongNetwork = (props) => {
             <div className={classes.secondaryButton} onClick={onSwitch}>
               {/* <div className={classes.secondaryButton} onClick={action2 ? action2 : navigateToMedium}> */}
               <Typography className={classes.buttonTextSecondary}>
-                SWITCH TO BSC MAINNET
+                SWITCH TO COREDAO MAINNET
               </Typography>
             </div>
           </div>

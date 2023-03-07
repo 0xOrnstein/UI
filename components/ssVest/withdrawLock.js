@@ -189,7 +189,7 @@ export function WithdrawLock({ nft, govToken, veToken }) {
 
         <Typography className={[classes.info, classes.infoWarning].join(" ")} color="textSecondary">
           <img src="/images/ui/info-circle-yellow.svg" />
-          <span>veCONE NFT #1234 has expired, to continue receiving boosted rewards you must unstake the expired veCONE NFT from your LP and stake one that is currently locked.</span>
+          <span>veLiquify NFT #1234 has expired, to continue receiving boosted rewards you must unstake the expired veLiquify NFT from your LP and stake one that is currently locked.</span>
         </Typography>
 
         <Typography className={[classes.info, classes.infoError].join(" ")} color="textSecondary">
@@ -223,7 +223,7 @@ export function WithdrawLock({ nft, govToken, veToken }) {
         color="primary"
         disabled={true}
       >
-        <Typography className={classes.actionButtonText}>Withdraw CONE</Typography>
+        <Typography className={classes.actionButtonText}>Withdraw Liquify</Typography>
       </Button>
     </Paper>
   );

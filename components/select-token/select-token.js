@@ -24,7 +24,7 @@ function TokenSelect(props) {
            viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M16.9201 0.949951L10.4001 7.46995C9.63008 8.23995 8.37008 8.23995 7.60008 7.46995L1.08008 0.949951"
-          stroke="#D3F85A" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"
+          stroke="#ff9404" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round"
           strokeLinejoin="round" />
       </svg>
     );
@@ -63,16 +63,16 @@ function TokenSelect(props) {
       {(!options || !options.length) &&
         <div className={classes.noNFT}>
           <div className={classes.noNFTtext}>
-            You receive NFT by creating a Lock of your CONE for some time, the more CONE you lock and for
+            You receive NFT by creating a Lock of your Liquify for some time, the more Liquify you lock and for
             the longest time, the more Voting Power your NFT will have.
           </div>
           <div className={classes.noNFTlinks}>
                         <span className={classes.noNFTlinkButton} onClick={() => {
                           router.push("/swap")
-                        }}>BUY CONE</span>
+                        }}>BUY Liquify</span>
             <span className={classes.noNFTlinkButton} onClick={() => {
               router.push("/vest")
-            }}>LOCK CONE FOR NFT</span>
+            }}>LOCK Liquify FOR NFT</span>
           </div>
         </div>
       }
@@ -87,7 +87,7 @@ function TokenSelect(props) {
                 style={{
                   fontWeight: 500,
                   fontSize: 16,
-                  color: '#D3F85A',
+                  color: '#ff9404',
                 }}>
                 #{option.id}
               </Typography>
