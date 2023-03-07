@@ -4,7 +4,7 @@ import * as contracts from './contracts'
 import * as actions from './actions'
 import * as queries from './graph-queries'
 
-let isTestnet = process.env.NEXT_PUBLIC_CHAINID == 80001
+let isTestnet = process.env.NEXT_PUBLIC_CHAINID == 1116
 
 // URLS
 let scan = 'https://bscscan.com/'
