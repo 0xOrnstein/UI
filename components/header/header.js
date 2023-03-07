@@ -69,7 +69,7 @@ const StatButton = () => {
       >
     <div
       className={[classes.statButton, classes[`statButton--${appTheme}`], 'g-flex', 'g-flex--align-center'].join(' ')}
-      onClick={() => window.open("https://info.Liquify.network/home", "_blank")}
+      /*onClick={() => window.open("https://info.liquify.network/home", "_blank")}*/
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
