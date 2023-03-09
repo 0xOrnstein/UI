@@ -103,9 +103,8 @@ function Navigation(props) {
         {renderSubNav("Liquidity", "liquidity")}
         {renderSubNav("Vest", "vest")}
         {renderSubNav("Rewards", "rewards")}
-        {/*{renderSubNav("Migrate", "migrate")}*/}
-        {/*renderSubNav("Vote", "vote")*/}
-        {/*renderSubNav("Whitelist", "whitelist")*/}
+        {renderSubNav("Vote", "vote")}
+        {renderSubNav("Whitelist", "whitelist")}
       </ToggleButtonGroup>
     );
   };

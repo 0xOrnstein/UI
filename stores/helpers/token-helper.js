@@ -78,11 +78,11 @@ export const createBaseAsset = async (address, web3, account, getBalance) => {
 };
 
 async function getTokenList() {
-  if (parseInt(process.env.NEXT_PUBLIC_CHAINID) === 80001) {
+  if (parseInt(process.env.NEXT_PUBLIC_CHAINID) === 1116) {
     // some test token list
   } else {
     /*await axios.get(
-     `https://raw.githubusercontent.com/Liquify-exchange/token-list/main/lists/pancakeswap-extended.json`
+     `https://raw.githubusercontent.com/Liquify-network/token-list/main/src/tokens/liquify-extended.json`
    )*/
     return {data: DEFAULT_TOKEN_LIST,}
   }
