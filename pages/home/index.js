@@ -4,7 +4,7 @@ import classes from "./home.module.css";
 import {useRouter} from "next/router";
 
 const socialLinks = {
-  twitter: "https://twitter.com/LiquifyDEX",
+  twitter: "https://twitter.com/NetworkLiquify",
   discord: "https://discord.com/invite/Ga5EsCQV6H",
   telegram: "https://t.me/LiquifyNetwork",
   gitbook: "https://docs.liquify.network/",
