@@ -5,7 +5,7 @@ import {useRouter} from "next/router";
 
 const socialLinks = {
   twitter: "https://twitter.com/NetworkLiquify",
-  discord: "https://discord.com/invite/Ga5EsCQV6H",
+  discord: "https://discord.gg/3S436bvRdW",
   telegram: "https://t.me/LiquifyNetwork",
   gitbook: "https://docs.liquify.network/",
   medium: "https://medium.com/@liquifynetwork",
