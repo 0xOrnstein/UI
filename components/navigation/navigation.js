@@ -71,7 +71,7 @@ function Navigation(props) {
     if (activePath.includes("liquidity")) {
       setActive("liquidity");
     }
-    if (activePath.includes("vest")) {
+   /* if (activePath.includes("vest")) {
       setActive("vest");
     }
     if (activePath.includes("vote")) {
@@ -83,12 +83,12 @@ function Navigation(props) {
     if (activePath.includes("rewards")) {
       setActive("rewards");
     }
-    if (activePath.includes("dashboard")) {
+   /* if (activePath.includes("dashboard")) {
       setActive("dashboard");
     }
     if (activePath.includes("whitelist")) {
       setActive("whitelist");
-    }
+    }*/
   }, []);
 
   const renderNavs = () => {
@@ -101,10 +101,10 @@ function Navigation(props) {
       >
         {renderSubNav("Swap", "swap")}
         {renderSubNav("Liquidity", "liquidity")}
-        {renderSubNav("Vest", "vest")}
+        {/*renderSubNav("Vest", "vest")}
         {renderSubNav("Rewards", "rewards")}
         {renderSubNav("Vote", "vote")}
-        {renderSubNav("Whitelist", "whitelist")}
+        {renderSubNav("Whitelist", "whitelist")*/}
       </ToggleButtonGroup>
     );
   };

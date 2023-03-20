@@ -14,7 +14,7 @@
   "tokens": 
   [
     {
-      "name": "Liquify Network",
+      "name": "Liquify token",
       "symbol": "LIQUIFY",
       "address": "0xe9aece1BA8bBd429a1ed33349C61280441AC8F99",
       "chainId": 1116,
@@ -22,12 +22,12 @@
       "logoURI": "https://raw.githubusercontent.com/Liquify-network/images/main/logo-white.png"
     },
     {
-      "name": "USDT",
-      "symbol": "USDT",
-      "address": "0x9Ebab27608bD64AFf36f027049aECC69102a0D1e",
+      "name": "Wrapped CORE",
+      "symbol": "WCORE",
+      "address": "0xe9aece1BA8bBd429a1ed33349C61280441AC8F99",
       "chainId": 1116,
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/Liquify-network/images/main/usdt.png"
+      "logoURI": "https://raw.githubusercontent.com/Liquify-network/images/main/logo-white.png"
     }
   ]
 }

@@ -1,9 +1,9 @@
 import abis from "../abis";
 import {Liquify_ADDRESS, WBNB_ADDRESS} from "./constants";
 
-export const GOV_TOKEN_ADDRESS = '0xA60205802E1B5C6EC1CAFA3cAcd49dFeECe05AC9'
-export const GOV_TOKEN_NAME = 'Liquify'
-export const GOV_TOKEN_SYMBOL = 'Liquify'
+export const GOV_TOKEN_ADDRESS = '0xe9aece1BA8bBd429a1ed33349C61280441AC8F99'
+export const GOV_TOKEN_NAME = 'Liquify token'
+export const GOV_TOKEN_SYMBOL = 'Liquify token'
 export const GOV_TOKEN_DECIMALS = 18
 export const GOV_TOKEN_LOGO = '/logo.png'
 export const GOV_TOKEN_ABI = abis.tokenABI
@@ -15,11 +15,11 @@ export const VE_TOKEN_DECIMALS = 18
 export const VE_TOKEN_LOGO = '/logo.png'
 export const VE_TOKEN_ABI = abis.veTokenABI
 
-export const WFTM_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
-export const WFTM_NAME = 'Wrapped BNB'
-export const WFTM_SYMBOL = 'WBNB'
+export const WFTM_ADDRESS = '0x987cC98029C4183C5570a8695ff302E2E4457C16'
+export const WFTM_NAME = 'Wrapped CORE'
+export const WFTM_SYMBOL = 'WCORE'
 export const WFTM_DECIMALS = 18
-export const WFTM_LOGO = 'https://assets.coingecko.com/coins/images/12591/small/binance-coin-logo.png'
+export const WFTM_LOGO = 'https://raw.githubusercontent.com/Liquify-network/images/main/core.png'
 export const WFTM_ABI = abis.wftmABI
 
 // alternative route asset
@@ -30,16 +30,16 @@ export const USDP_DECIMALS = 6
 export const USDP_LOGO = 'https://2173993027-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9HhCCgYexXiRot0OWAJY%2Fuploads%2FQ41zhb0z0oV5WI1zpKEg%2FUSD%2B%20logo.png?alt=media&token=533d9ed9-6904-4f45-82a3-2c9e1060a3b5'
 export const USDP_ABI = abis.erc20ABI
 
-export const FTM_ADDRESS = 'BNB'
-export const FTM_NAME = 'BNB'
-export const FTM_SYMBOL = 'BNB'
+export const FTM_ADDRESS = 'CORE'
+export const FTM_NAME = 'CORE'
+export const FTM_SYMBOL = 'CORE'
 export const FTM_DECIMALS = 18
-export const FTM_LOGO = 'https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png'
+export const FTM_LOGO = 'https://raw.githubusercontent.com/Liquify-network/images/main/core.png'
 
-export const FACTORY_ADDRESS = '0x0EFc2D2D054383462F2cD72eA2526Ef7687E1016'
+export const FACTORY_ADDRESS = '0xa67ad57CcC07eC6caCb801bF1b10F7a8918F94C7'
 export const FACTORY_ABI = abis.factoryABI
 
-export const ROUTER_ADDRESS = '0xbf1fc29668e5f5Eaa819948599c9Ac1B1E03E75F'
+export const ROUTER_ADDRESS = '0xb6abE5324002b1357004eccEcDCfB365643f10F3'
 export const ROUTER_ABI = abis.routerABI
 
 export const VE_DIST_ADDRESS = '0xdfB765935D7f4e38641457c431F89d20Db571674'
@@ -50,7 +50,7 @@ export const VOTER_ABI = abis.voterABI
 
 export const REWARD_ADDRESS = '0xA60205802E1B5C6EC1CAFA3cAcd49dFeECe05AC9'
 
-export const LIBRARY_ADDRESS = '0x6575F1ba00D1dafAd82271398574cbC8f341453A'
+export const LIBRARY_ADDRESS = '0xc8A6A4B0Df026E7596Ec1990764d0474fe7d8cc9'
 export const LIBRARY_ABI = abis.dystopiaLibraryABI
 
 export const ERC20_ABI = abis.erc20ABI
@@ -59,7 +59,7 @@ export const GAUGE_ABI = abis.gaugeABI
 export const BRIBE_ABI = abis.bribeABI
 export const TOKEN_ABI = abis.tokenABI
 
-export const MULTICALL_ADDRESS = '0xFC9b894D0b4a34AB41278Df5F2aBEEb5de95c9e4'
+export const MULTICALL_ADDRESS = '0x46405c0DBD9DaEeFdd53EcE8540967aABA9f33fC'
 
 export const USD_PLUS_ADDRESS = '0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65'
 export const USD_PLUS_BOOSTED_DATA_URL = 'https://bsc.overnight.fi/api/balancer/week/apr'

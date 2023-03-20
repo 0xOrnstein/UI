@@ -1,48 +1,67 @@
 import abis from "../abis";
+import {Liquify_ADDRESS, WBNB_ADDRESS} from "./constants";
 
-export const GOV_TOKEN_ADDRESS = '0x6E511b6fAce2c5094163A1F420135a4D70a5ecd7'
-export const GOV_TOKEN_NAME = 'Liquify'
-export const GOV_TOKEN_SYMBOL = 'Liquify'
+export const GOV_TOKEN_ADDRESS = '0xe9aece1BA8bBd429a1ed33349C61280441AC8F99'
+export const GOV_TOKEN_NAME = 'Liquify token'
+export const GOV_TOKEN_SYMBOL = 'Liquify token'
 export const GOV_TOKEN_DECIMALS = 18
 export const GOV_TOKEN_LOGO = '/logo.png'
 export const GOV_TOKEN_ABI = abis.tokenABI
 
-export const VE_TOKEN_ADDRESS = '0x043074eaAf5DCca960601b7B464FCd2bEC34df1D'
+export const VE_TOKEN_ADDRESS = '0xd0C1378c177E961D96c06b0E8F6E7841476C81Ef'
 export const VE_TOKEN_NAME = 'veLiquify'
 export const VE_TOKEN_SYMBOL = 'veLiquify'
 export const VE_TOKEN_DECIMALS = 18
 export const VE_TOKEN_LOGO = '/logo.png'
 export const VE_TOKEN_ABI = abis.veTokenABI
 
-export const WFTM_ADDRESS = '0xe02f20BB33F8Bfb48eB907523435CA886e139A08'
-export const WFTM_NAME = 'Wrapped MATIC'
-export const WFTM_SYMBOL = 'WMATIC'
+export const WFTM_ADDRESS = '0x987cC98029C4183C5570a8695ff302E2E4457C16'
+export const WFTM_NAME = 'Wrapped CORE'
+export const WFTM_SYMBOL = 'WCORE'
 export const WFTM_DECIMALS = 18
-export const WFTM_LOGO = 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png'
+export const WFTM_LOGO = 'https://raw.githubusercontent.com/Liquify-network/images/main/core.png'
 export const WFTM_ABI = abis.wftmABI
 
-export const FTM_ADDRESS = 'MATIC'
-export const FTM_NAME = 'MATIC'
-export const FTM_SYMBOL = 'MATIC'
-export const FTM_DECIMALS = 18
-export const FTM_LOGO = 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png'
+// alternative route asset
+export const USDP_ADDRESS = '0x236eeC6359fb44CCe8f97E99387aa7F8cd5cdE1f'
+export const USDP_NAME = 'USD Plus'
+export const USDP_SYMBOL = 'USD+'
+export const USDP_DECIMALS = 6
+export const USDP_LOGO = 'https://2173993027-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9HhCCgYexXiRot0OWAJY%2Fuploads%2FQ41zhb0z0oV5WI1zpKEg%2FUSD%2B%20logo.png?alt=media&token=533d9ed9-6904-4f45-82a3-2c9e1060a3b5'
+export const USDP_ABI = abis.erc20ABI
 
-export const FACTORY_ADDRESS = '0xD0692d6C30cd7a383f227Ba1cB28EeCE2F050926'
+export const FTM_ADDRESS = 'CORE'
+export const FTM_NAME = 'CORE'
+export const FTM_SYMBOL = 'CORE'
+export const FTM_DECIMALS = 18
+export const FTM_LOGO = 'https://raw.githubusercontent.com/Liquify-network/images/main/core.png'
+
+export const FACTORY_ADDRESS = '0xa67ad57CcC07eC6caCb801bF1b10F7a8918F94C7'
 export const FACTORY_ABI = abis.factoryABI
 
-export const ROUTER_ADDRESS = '0xe9EdEb5576ea876014e76A496B4c564756ddDAEF'
+export const ROUTER_ADDRESS = '0xb6abE5324002b1357004eccEcDCfB365643f10F3'
 export const ROUTER_ABI = abis.routerABI
 
-export const VE_DIST_ADDRESS = '0x67fef6a7908Faf1d89B659b9bbE76D82837Ee6E2'
+export const VE_DIST_ADDRESS = '0xdfB765935D7f4e38641457c431F89d20Db571674'
 export const VE_DIST_ABI = abis.veDistABI
 
-export const VOTER_ADDRESS = '0xECACDAcf3b6c23E180f70cF28b6811652e6808e7'
+export const VOTER_ADDRESS = '0xC3B5d80E4c094B17603Ea8Bb15d2D31ff5954aAE'
 export const VOTER_ABI = abis.voterABI
-export const REWARD_ADDRESS = '0x332C7aC34580dfEF553B7726549cEc7015C4B39b'
+
+export const REWARD_ADDRESS = '0xA60205802E1B5C6EC1CAFA3cAcd49dFeECe05AC9'
+
+export const LIBRARY_ADDRESS = '0xc8A6A4B0Df026E7596Ec1990764d0474fe7d8cc9'
+export const LIBRARY_ABI = abis.dystopiaLibraryABI
+
 export const ERC20_ABI = abis.erc20ABI
 export const PAIR_ABI = abis.pairABI
 export const GAUGE_ABI = abis.gaugeABI
 export const BRIBE_ABI = abis.bribeABI
 export const TOKEN_ABI = abis.tokenABI
 
-export const MULTICALL_ADDRESS = '0x08411ADd0b5AA8ee47563b146743C13b3556c9Cc'
+export const MULTICALL_ADDRESS = '0x46405c0DBD9DaEeFdd53EcE8540967aABA9f33fC'
+
+export const USD_PLUS_ADDRESS = '0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65'
+export const USD_PLUS_BOOSTED_DATA_URL = 'https://bsc.overnight.fi/api/balancer/week/apr'
+
+export const SPHERE_ADDRESS = '0x62f594339830b90ae4c084ae7d223ffafd9658a7'

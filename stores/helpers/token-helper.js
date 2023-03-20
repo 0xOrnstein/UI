@@ -12,7 +12,8 @@ import {formatBN, removeDuplicate} from '../../utils';
 import {getLocalAssets} from "./local-storage-helper";
 import {createClient} from "urql";
 
-const client = createClient({url: process.env.NEXT_PUBLIC_API});
+const client = createClient({url: "https://rpc.coredao.org/"});
+
 
 export function getTokenContract(web3, address) {
   return new web3.eth.Contract(
@@ -78,17 +79,12 @@ export const createBaseAsset = async (address, web3, account, getBalance) => {
 };
 
 async function getTokenList() {
-  if (parseInt(process.env.NEXT_PUBLIC_CHAINID) === 1116) {
-    // some test token list
-  } else {
-    /*await axios.get(
-     `https://raw.githubusercontent.com/Liquify-network/token-list/main/src/tokens/liquify-extended.json`
-   )*/
     return {data: DEFAULT_TOKEN_LIST,}
   }
-}
+
 
 async function getTokensFromSubgraph() {
+  console.log("aaa" + await client.query(QUERIES.tokensQuery).toPromise());
   const resp = await client.query(QUERIES.tokensQuery).toPromise();
   if (!!resp.error) {
     console.log("Token query error", resp.error);
@@ -117,7 +113,7 @@ export const getBaseAssets = async () => {
       }
 
       if (baseAsset.address.toLowerCase() === Liquify_ADDRESS.toLowerCase()) {
-        baseAsset.logoURI = 'https://icons.llama.fi/Liquify.png'
+        baseAsset.logoURI = 'https://raw.githubusercontent.com/Liquify-network/images/main/logo-white.png'
       }
 
       if (RENAME_ASSETS[baseAsset.name]) {

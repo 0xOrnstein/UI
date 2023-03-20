@@ -5,7 +5,7 @@ import {BLACK_LIST_TOKENS, CONTRACTS, NETWORK_TOKEN_NAME, QUERIES, WBNB_ADDRESS,
 import {getEthPrice, getOrCreateBaseAsset, isNetworkToken} from "./token-helper";
 import {multicallRequest} from "./multicall-helper";
 
-const client = createClient({url: process.env.NEXT_PUBLIC_API});
+const client = createClient({url: "https://rpc.coredao.org/"});
 
 export function getPairContract(web3, pairAddress) {
   return new web3.eth.Contract(CONTRACTS.PAIR_ABI, pairAddress);
