@@ -29,9 +29,9 @@ async function connect() {
           appName: 'Liquify app',
           infuraId: `${process.env.NEXT_PUBLIC_INFURA_KEY}`,
           rpc: {
-            56: `https://bsc-dataseed.binance.org/`,
+            1116: `https://rpc.coredao.org`,
           },
-          supportedChainIds: [56],
+          supportedChainIds: [1116],
         },
       },
       walletconnect: {
@@ -39,9 +39,9 @@ async function connect() {
         options: {
           infuraId: `${process.env.NEXT_PUBLIC_INFURA_KEY}`,
           rpc: {
-            56: `https://bsc-dataseed.binance.org/`,
+            1116: `https://rpc.coredao.org`,
           },
-          supportedChainIds: [56],
+          supportedChainIds: [1116],
         },
       },
     },

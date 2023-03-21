@@ -12,7 +12,16 @@ import {formatBN, removeDuplicate} from '../../utils';
 import {getLocalAssets} from "./local-storage-helper";
 import {createClient} from "urql";
 
-const client = createClient({url: "https://rpc.coredao.org/"});
+const client = createClient({
+  url: process.env.NEXT_PUBLIC_API,
+  fetchOptions: () => {
+    return {
+      headers: {
+        'apikey': process.env.APIKEY,
+      },
+    };
+  },
+});
 
 
 export function getTokenContract(web3, address) {
@@ -84,12 +93,11 @@ async function getTokenList() {
 
 
 async function getTokensFromSubgraph() {
-  console.log("aaa" + await client.query(QUERIES.tokensQuery).toPromise());
   const resp = await client.query(QUERIES.tokensQuery).toPromise();
   if (!!resp.error) {
     console.log("Token query error", resp.error);
   } else {
-    // console.log('Token query', resp)
+    console.log('Token query', resp)
   }
   return resp.data.tokens;
 }

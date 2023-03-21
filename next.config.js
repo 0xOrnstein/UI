@@ -6,7 +6,21 @@ module.exports = {
         fs: 'empty'
       }
     }
+    const ignored = /[\\/]node_modules[\\/]|[\\/]\\.next[\\/]/;
+    config.watchOptions = {
+      ignored,
+    };
 
     return config
-  }
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: '/api/:path*',
+      },
+    ]
+  },
+  
 }
